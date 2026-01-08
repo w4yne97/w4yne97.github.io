@@ -1,0 +1,71 @@
+main:
+
+  - title: "SWE-Lego: Pushing the Limits of Supervised Fine-Tuning for Software Issue Resolving"
+    authors: Chaofan Tao, Jierun Chen, Yuxin Jiang, Kaiqi Kou, <strong>Shaowei Wang</strong>, Ruoyu Wang, Xiaohui Li, Sidi Yang, Yiming Du, Jianbo Dai, Zhiming Mao, Xinyu Wang, Lifeng Shang, Haoli Bai
+    conference_short: arXiv
+    conference: arXiv preprint, 2026.
+    pdf: https://arxiv.org/abs/2601.01426
+    image: assets/img/SWE-LEGO.png
+
+  - title: "MotionAnimate: Animate Human Images with Pose Motion for Vivid and Temporally Consistent Video Generation"
+    authors: Ruoyu Wang, <strong>Shaowei Wang</strong>, Rui Gong, Chen Cai, Jianjun Gao, Wenqian Wang, Wenyang Liu, Kim-Hui Yap
+    conference_short: Information Fusion
+    conference: Information Fusion, 2025.
+    pdf: https://www.sciencedirect.com/science/article/abs/pii/S1566253525006311
+    image: assets/img/MotionAnimate.png
+
+  - title: "Alignment Relation Is What You Need for Diagram Parsing"
+    authors: Xinyu Zhang, Lingling Zhang, Xin Hu, Jun Liu, <strong>Shaowei Wang</strong>, Qianying Wang
+    conference_short: TIP
+    conference: IEEE Transactions on Image Processing <strong>(TIP)</strong>, 2024.
+    pdf: https://ieeexplore.ieee.org/document/10472414
+    image: assets/img/Alignment-Guided.png
+
+  - title: "Multi-View Cognition with Path Search for One-Shot Part Labeling"
+    authors: <strong>Shaowei Wang</strong>, Lingling Zhang, Tao Qin, Jun Liu, Yifei Li, Qianying Wang, Qinghua Zheng
+    conference_short: CVIU
+    conference: Computer Vision and Image Understanding <strong>(CVIU)</strong>, 2024.
+    pdf: https://www.sciencedirect.com/science/article/abs/pii/S1077314224000961
+    image: assets/img/Multi-View.png
+
+  - title: "E-GPS: Explainable Geometry Problem Solving via Top-Down Solver and Bottom-Up Generator"
+    authors: Wenjun Wu, Lingling Zhang, Jun Liu, Xi Tang, Yaxian Wang, <strong>Shaowei Wang</strong>, Qianying Wang
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024.
+    pdf: https://openaccess.thecvf.com/content/CVPR2024/papers/Wu_E-GPS_Explainable_Geometry_Problem_Solving_via_Top-Down_Solver_and_Bottom-Up_CVPR_2024_paper.pdf
+    image: assets/img/E-GPS.png
+
+  - title: "CoG-DQA: Chain-of-Guiding Learning with Large Language Models for Diagram Question Answering"
+    authors: <strong>Shaowei Wang</strong>, Lingling Zhang, Longji Zhu, Tao Qin, Kim-Hui Yap, Xinyu Zhang, Jun Liu
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024.
+    pdf: https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_CoG-DQA_Chain-of-Guiding_Learning_with_Large_Language_Models_for_Diagram_Question_CVPR_2024_paper.pdf
+    image: assets/img/CoG-DQA.png
+
+  - title: "Alignment-Guided Self-Supervised Learning for Diagram Question Answering"
+    authors: <strong>Shaowei Wang</strong>, Lingling Zhang, Wenjun Wu, Tao Qin, Xinyu Zhang, Jun Liu
+    conference_short: TMM
+    conference: IEEE Transactions on Multimedia <strong>(TMM)</strong>, 2024.
+    pdf: https://ieeexplore.ieee.org/document/10812784/
+    image: assets/img/Alignment-Guided.png
+
+  - title: "Computer Science Diagram Understanding with Topology Parsing"
+    authors: <strong>Shaowei Wang</strong>, Lingling Zhang, Xuan Luo, Yi Yang, Xin Hu, Tao Qin, Jun Liu
+    conference_short: TKDD
+    conference: ACM Transactions on Knowledge Discovery from Data <strong>(TKDD)</strong>, 2022.
+    pdf: https://dl.acm.org/doi/10.1145/3522689
+    image: assets/img/Computer_Science_Diagram.png
+
+  - title: "MuL-GRN: Multi-Level Graph Relation Network for Few-Shot Node Classification"
+    authors: Lingling Zhang, <strong>Shaowei Wang</strong>, Jun Liu, Xiaojun Chang, Qika Lin, Yaqiang Wu, Qinghua Zheng
+    conference_short: TKDE
+    conference: IEEE Transactions on Knowledge and Data Engineering <strong>(TKDE)</strong>, 2022.
+    pdf: https://ieeexplore.ieee.org/document/9779997
+    image: assets/img/MuL-GRN.png
+
+  - title: "Auto-FSL: Searching the Attribute Consistent Network for Few-Shot Learning"
+    authors: Lingling Zhang, <strong>Shaowei Wang</strong>, Xiaojun Chang, Jun Liu, Zongyuan Ge, Qinghua Zheng
+    conference_short: TCSVT
+    conference: IEEE Transactions on Circuits and Systems for Video Technology <strong>(TCSVT)</strong>, 2021.
+    pdf: https://ieeexplore.ieee.org/document/9419063/
+    image: assets/img/Auto-FSL.png

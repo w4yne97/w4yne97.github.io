@@ -1,0 +1,11 @@
+- title: "SWE-Lego"
+  description: "A supervised fine-tuning framework that pushes the limits of LLMs for automated software issue resolving, achieving state-of-the-art performance on SWE-bench benchmarks."
+  image: "assets/img/SWE-LEGO.png"
+  link: "https://github.com/SWE-Lego/SWE-Lego"
+  tags: ["LLM", "Software Engineering", "Fine-tuning"]
+
+- title: "Diagram Understanding & Visual Reasoning"
+  description: "A comprehensive framework for understanding complex scientific diagrams using deep learning and graph neural networks, with applications in educational QA systems."
+  image: "assets/img/CoG-DQA.png"
+  link: ""
+  tags: ["Computer Vision", "Multimodal Learning"]

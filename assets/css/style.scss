@@ -1,0 +1,39 @@
+---
+---
+
+@import "minimal-light";
+
+/* Language Toggle Styles */
+.lang-toggle {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.lang-link {
+  color: #494e52;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lang-link:hover {
+  color: #007bff;
+}
+
+.lang-current {
+  font-weight: 600;
+  color: #007bff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .lang-link {
+    color: #c9cacc;
+  }
+
+  .lang-link:hover {
+    color: #79b8ff;
+  }
+
+  .lang-current {
+    color: #79b8ff;
+  }
+}
