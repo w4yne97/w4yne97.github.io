@@ -2,6 +2,7 @@
 layout: homepage
 title: Hobbies
 permalink: /hobbies/
+alternate_url: /zh/hobbies/
 ---
 
 ## Hobbies & Interests

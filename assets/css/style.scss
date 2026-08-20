@@ -16,12 +16,12 @@
 }
 
 .lang-link:hover {
-  color: #007bff;
+  color: var(--accent-color);
 }
 
 .lang-current {
   font-weight: 600;
-  color: #007bff;
+  color: var(--accent-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,10 +30,10 @@
   }
 
   .lang-link:hover {
-    color: #79b8ff;
+    color: var(--accent-color);
   }
 
   .lang-current {
-    color: #79b8ff;
+    color: var(--accent-color);
   }
 }

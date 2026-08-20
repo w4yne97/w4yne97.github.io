@@ -3,6 +3,7 @@ layout: homepage
 title: 兴趣爱好
 permalink: /zh/hobbies/
 lang: zh
+alternate_url: /hobbies/
 ---
 
 ## 兴趣爱好

@@ -1,11 +1,38 @@
 main:
 
+  - title: "LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents"
+    authors: Yiming Du, Yuxin Jiang, Tao Yuan, Jianbo Dai, <strong>Shaowei Wang</strong>, Jierun Chen, Chaofan Tao, Xianzhi Yu, Lifeng Shang, Kam-Fai Wong, Xiaohui Li, Haoli Bai
+    conference_short: arXiv
+    conference: arXiv preprint, 2026.
+    pdf: https://arxiv.org/abs/2608.17393
+    image: assets/img/LEGO-RL.png
+    code: https://github.com/LegoX/Lego-RL
+    page: https://lego-rl.pages.dev
+
+  - title: "SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review"
+    authors: Ruoyu Wang, Jierun Chen, <strong>Shaowei Wang</strong>, Chaofan Tao, Sidi Yang, Yuxin Jiang, Kim-Hui Yap, Lifeng Shang, Xiaohui Li, Haoli Bai
+    conference_short: arXiv
+    conference: arXiv preprint, 2026.
+    pdf: https://arxiv.org/abs/2607.06065
+    image: assets/img/SWE-Review.png
+    code: https://github.com/LegoX/SWE-Review
+    page: https://legox.net/blog/swe-review/
+
+  - title: "REAgent: Requirement-Driven LLM Agents for Software Issue Resolution"
+    authors: Shiqi Kuang, Zhao Tian, Kaiwei Lin, Chaofan Tao, <strong>Shaowei Wang</strong>, Haoli Bai, Lifeng Shang, Junjie Chen
+    conference_short: arXiv
+    conference: arXiv preprint, 2026.
+    pdf: https://arxiv.org/abs/2604.06861
+    image: assets/img/REAgent.png
+
   - title: "SWE-Lego: Pushing the Limits of Supervised Fine-Tuning for Software Issue Resolving"
     authors: Chaofan Tao, Jierun Chen, Yuxin Jiang, Kaiqi Kou, <strong>Shaowei Wang</strong>, Ruoyu Wang, Xiaohui Li, Sidi Yang, Yiming Du, Jianbo Dai, Zhiming Mao, Xinyu Wang, Lifeng Shang, Haoli Bai
     conference_short: arXiv
     conference: arXiv preprint, 2026.
     pdf: https://arxiv.org/abs/2601.01426
     image: assets/img/SWE-LEGO.png
+    code: https://github.com/LegoX/SWE-Lego
+    page: https://legox.net/blog/swe-lego/
 
   - title: "MotionAnimate: Animate Human Images with Pose Motion for Vivid and Temporally Consistent Video Generation"
     authors: Ruoyu Wang, <strong>Shaowei Wang</strong>, Rui Gong, Chen Cai, Jianjun Gao, Wenqian Wang, Wenyang Liu, Kim-Hui Yap

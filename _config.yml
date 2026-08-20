@@ -1,18 +1,20 @@
 # Basic Information
 title: Shaowei Wang
 position: AI Researcher
+position_zh: AI 研究员
 affiliation: Huawei Technologies
 email: wsw970905 (at) gmail.com
 
 # Search Engine Optimization (SEO)
-keywords: LLM, software engineering, machine learning, AI researcher
-description: Personal homepage of a research scientist focusing on LLM and Software Engineering.
-canonical: https://w4yne97.github.io/
+keywords: foundation model post-training, coding agents, reinforcement learning, software engineering, LLM researcher
+description: Shaowei Wang is a researcher working on foundation model post-training and coding agents.
+description_zh: 王绍伟的个人学术主页，研究方向为基础模型后训练与 Coding Agent。
+url: https://w4yne97.github.io
+baseurl: ""
 
 # Links
 # If you don't need one of them, you may delete the corresponding line.
 google_scholar: https://scholar.google.com/citations?user=Eq6qVA4AAAAJ
-# cv_link: assets/files/curriculum_vitae.pdf
 github_link: https://github.com/w4yne97
 # linkedin: https://www.linkedin.com/
 # twitter: https://twitter.com/
@@ -20,6 +22,8 @@ github_link: https://github.com/w4yne97
 # Images (e.g., your profile picture and your website's favicon)
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively.
 avatar: assets/img/avatar.jpg
+avatar_alt: Portrait of Shaowei Wang
+avatar_alt_zh: 王绍伟个人照片
 favicon: assets/img/favicon.png
 favicon_dark: assets/img/favicon-dark.png
 

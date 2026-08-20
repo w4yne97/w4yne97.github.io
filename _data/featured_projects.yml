@@ -1,0 +1,20 @@
+- title: "LegoX"
+  description: "An open-source project series connecting agentic data pipelines, post-training frameworks, evaluation benchmarks, and foundation models for coding agents."
+  description_zh: "面向 Coding Agent 的开源项目系列，连接智能体数据管线、后训练框架、评测基准与基础模型。"
+  link: "https://legox.net"
+  link_type: "website"
+  tags: ["Coding Agents", "Post-training", "Open Source"]
+
+- title: "LEGO-RL"
+  description: "A harness-native online reinforcement learning framework connecting Claude Code, OpenHands, and OpenCode to scalable policy optimization on real repositories."
+  description_zh: "原生适配智能体框架的在线强化学习系统，将 Claude Code、OpenHands 与 OpenCode 接入真实代码仓库上的可扩展策略优化。"
+  link: "https://lego-rl.pages.dev"
+  link_type: "website"
+  tags: ["Reinforcement Learning", "Coding Agents", "Training Systems"]
+
+- title: "SWE-Review"
+  description: "An agentic code review framework that turns one-shot issue resolution into a closed-loop generate-review-revise process."
+  description_zh: "面向 Coding Agent 的智能体代码审查框架，将一次性问题修复扩展为生成、审查与修订闭环。"
+  link: "https://legox.net/blog/swe-review/"
+  link_type: "website"
+  tags: ["LLM", "Code Review", "Coding Agents"]

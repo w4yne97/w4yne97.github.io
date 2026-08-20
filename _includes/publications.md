@@ -1,14 +1,16 @@
-<h2 id="publications">Publications</h2>
+{% assign publication_limit = include.limit | default: site.data.publications.main.size %}
+{% assign publication_heading = include.heading | default: "Publications" %}
+<h2 id="publications">{{ publication_heading }}</h2>
 
 <div class="publications">
 <div class="bibliography">
 
-{% for link in site.data.publications.main %}
+{% for link in site.data.publications.main limit: publication_limit %}
 
 <div class="pub-row">
   <div class="col-sm-3 abbr">
     {% if link.image %} 
-    <img src="{{ site.baseurl }}/{{ link.image }}" class="teaser img-fluid" alt="Teaser Image">
+    <img src="{{ site.baseurl }}/{{ link.image }}" class="teaser img-fluid" alt="Teaser for {{ link.title }}" loading="lazy">
     {% endif %}
     {% if link.conference_short %} 
     <abbr class="badge">{{ link.conference_short }}</abbr>
@@ -42,3 +44,7 @@
 
 </div>
 </div>
+
+{% if include.more_url %}
+<div class="section-more"><a href="{{ include.more_url | relative_url }}">{{ include.more_label | default: "View all publications →" }}</a></div>
+{% endif %}

@@ -1,111 +1,22 @@
 ---
 layout: homepage
+description: Shaowei Wang is a researcher focused on foundation model post-training and coding agents.
+alternate_url: /zh/
 ---
 
 ## About Me
 
-I am an AI Researcher at **Huawei Technologies**, working in the Foundation Model Division. My research focuses on **Large Language Models (LLMs)** and **Software Engineering (SWE)**. I am particularly interested in how post-training optimization and agentic RL can push the boundaries of code intelligence.
+I am an AI Researcher at **Huawei Technologies**. My work focuses on **foundation model post-training for coding agents**, spanning supervised fine-tuning, agentic reinforcement learning, evaluation, and training systems.
 
-Previously, I received my Ph.D. from **Xi'an Jiaotong University**, and participated in a Joint Training Program at **Nanyang Technological University**. My doctoral research focused on **Diagram Understanding** and **Visual Question Answering**. During this period, I published several papers in CVPR, TIP, and other top venues. Transitioning from vision to language models, I continue to pursue efficient, high-impact solutions for emerging AI challenges.
+Previously, I received my Ph.D. from **Xi'an Jiaotong University** and was a visiting Ph.D. student at **Nanyang Technological University**. My doctoral research centered on diagram understanding and visual reasoning.
 
-## News
+## Selected Work
 
-<table class="news-table">
-  <tr>
-    <td class="date">Jan 2026</td>
-    <td>Technical report <strong>"SWE-LEGO"</strong> released.</td>
-  </tr>
-  <tr>
-    <td class="date">Apr 2025</td>
-    <td>Joined <strong>Huawei Technologies</strong> as an AI Researcher.</td>
-  </tr>
-  <tr>
-    <td class="date">Mar 2025</td>
-    <td>Received <strong>Ph.D.</strong> degree from Xi'an Jiaotong University.</td>
-  </tr>
-  <tr>
-    <td class="date">Jan 2025</td>
-    <td>One paper accepted by <strong>Information Fusion</strong>.</td>
-  </tr>
-  <tr>
-    <td class="date">Oct 2024</td>
-    <td>Completed Joint Ph.D. Program at <strong>Nanyang Technological University</strong>.</td>
-  </tr>
-  <tr>
-    <td class="date">Feb 2024</td>
-    <td>Two papers accepted by <strong>CVPR 2024</strong>.</td>
-  </tr>
-  <tr>
-    <td class="date">2024</td>
-    <td>Papers accepted by <strong>TIP</strong>, <strong>TMM</strong>, <strong>CVIU</strong>.</td>
-  </tr>
-  <tr>
-    <td class="date">Oct 2023</td>
-    <td>Started Joint Ph.D. Program at <strong>Nanyang Technological University</strong>.</td>
-  </tr>
-</table>
-
-## Research Interests
-
-My research focuses on advancing the intersection of **Large Language Models** and **Software Engineering**, with emphasis on:
-
-*   **LLM Post-Training for Code Intelligence**: Developing efficient fine-tuning and alignment techniques to enhance LLMs' capabilities in software development tasks, including automated bug fixing, code generation, and issue resolution.
-
-*   **Agentic Systems for Software Engineering**: Building autonomous agents powered by reinforcement learning that can perform complex software engineering tasks through tool use, planning, and multi-step reasoning.
-
-*   **Multimodal Understanding**: Leveraging my background in computer vision, I am interested in multimodal approaches that combine code, natural language, and visual information for comprehensive software understanding.
-
-Previously, my doctoral research focused on **diagram understanding** and **visual question answering**, where I developed methods for parsing and reasoning with complex visual structures in scientific and technical documents.
-
-## Education
-
-<table class="news-table">
-  <tr>
-    <td class="date">2021.03—2025.03</td>
-    <td><strong>Ph.D.</strong> in Computer Science, Xi'an Jiaotong University, China.</td>
-  </tr>
-  <tr>
-    <td class="date">2023.10—2024.10</td>
-    <td><strong>Visiting Ph.D.</strong>, Nanyang Technological University, Singapore.</td>
-  </tr>
-  <tr>
-    <td class="date">2019.09—2021.03</td>
-    <td><strong>M.S.</strong> in Computer Science, Xi'an Jiaotong University, China.</td>
-  </tr>
-  <tr>
-    <td class="date">2015.09—2019.06</td>
-    <td><strong>B.E.</strong> in Information and Communication Engineering, Xi'an Jiaotong University, China.</td>
-  </tr>
-</table>
-
-## Honors & Awards
-
-<table class="news-table">
-  <tr>
-    <td class="date">2021—2025</td>
-    <td><strong>Top-Class Doctoral Scholarship</strong>, Xi'an Jiaotong University.</td>
-  </tr>
-  <tr>
-    <td class="date">Dec 2022</td>
-    <td><strong>First Prize</strong>, Future Cup AI Academic Competition (National).</td>
-  </tr>
-  <tr>
-    <td class="date">Oct 2022</td>
-    <td><strong>Organizer</strong>, CCKS 2022 Diagram QA Evaluation Task.</td>
-  </tr>
-  <tr>
-    <td class="date">Nov 2021</td>
-    <td><strong>Best Resource Paper Award</strong>, CCKS 2021.</td>
-  </tr>
-</table>
-
-## Selected Projects
-
-<div class="projects-grid">
-  {% for project in site.data.projects limit:2 %}
+<div class="projects-grid featured-projects-grid">
+  {% for project in site.data.featured_projects %}
   <div class="project-card">
     <div class="project-content">
-      <h3>{{ project.title }}{% if project.link and project.link != "" %} <a href="{{ project.link }}" class="github-link" title="GitHub"><i class="fab fa-github"></i></a>{% endif %}</h3>
+      <h3>{{ project.title }}{% if project.link and project.link != "" %} <a href="{{ project.link }}" class="github-link" title="{% if project.link_type == 'website' %}Website{% else %}GitHub{% endif %}" aria-label="{{ project.title }} {% if project.link_type == 'website' %}website{% else %}on GitHub{% endif %}"><i class="{% if project.link_type == 'website' %}fas fa-globe{% else %}fab fa-github{% endif %}"></i></a>{% endif %}</h3>
       <p>{{ project.description }}</p>
       <div class="project-tags">
         {% for tag in project.tags %}
@@ -116,12 +27,58 @@ Previously, my doctoral research focused on **diagram understanding** and **visu
   </div>
   {% endfor %}
 </div>
-<div style="margin-top: 15px; text-align: right;">
-  <a href="{{ site.baseurl }}/projects/">View All Projects →</a>
+<div class="section-more"><a href="{{ site.baseurl }}/projects/">View projects →</a></div>
+
+## Latest
+
+<table class="news-table">
+  <tr>
+    <td class="date">Aug 2026</td>
+    <td>Technical report <strong>"LEGO-RL"</strong> and its open-source framework released.</td>
+  </tr>
+  <tr>
+    <td class="date">Aug 2026</td>
+    <td><strong>SWE-Lego</strong> models and datasets surpassed 200K cumulative downloads.</td>
+  </tr>
+  <tr>
+    <td class="date">Jul 2026</td>
+    <td>Technical report <strong>"SWE-Review"</strong> released.</td>
+  </tr>
+  <tr>
+    <td class="date">Apr 2026</td>
+    <td>Technical report <strong>"REAgent"</strong> released.</td>
+  </tr>
+  <tr>
+    <td class="date">Jan 2026</td>
+    <td>Technical report <strong>"SWE-Lego"</strong> released.</td>
+  </tr>
+</table>
+
+{% include publications.md limit=5 heading="Selected Publications" more_url="/publications/" more_label="View all publications →" %}
+
+## Background
+
+<div class="background-grid">
+  <div>
+    <h3>Education</h3>
+    <ul class="compact-list">
+      <li><strong>Ph.D. in Computer Science</strong><br>Xi'an Jiaotong University, 2021–2025</li>
+      <li><strong>Visiting Ph.D.</strong><br>Nanyang Technological University, 2023–2024</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Selected Recognition</h3>
+    <ul class="compact-list">
+      <li>Top-Class Doctoral Scholarship, 2021–2025</li>
+      <li>First Prize, Future Cup AI Academic Competition, 2022</li>
+      <li>Best Resource Paper Award, CCKS 2021</li>
+    </ul>
+  </div>
 </div>
 
-{% include_relative _includes/publications.md %}
-
-<div style="margin-top: 80px; padding-top: 20px; border-top: 1px solid #f0f0f0; color: #666; font-size: 0.9rem;">
-  <strong>Get in Touch:</strong> Feel free to email me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+<div class="contact-strip">
+  <strong>Get in touch</strong>
+  <span>{{ site.email }}</span>
+  <a href="{{ site.github_link }}">GitHub</a>
+  <a href="{{ site.google_scholar }}">Google Scholar</a>
 </div>

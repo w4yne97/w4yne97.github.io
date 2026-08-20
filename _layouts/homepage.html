@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{% if page.lang == "zh" %}zh-CN{% else %}en{% endif %}">
   <head>
-    <title>{{ site.title }} | {{site.affiliation}}</title>
+    {% if page.lang == "zh" %}
+      {% assign page_description = page.description | default: site.description_zh %}
+    {% else %}
+      {% assign page_description = page.description | default: site.description %}
+    {% endif %}
+    {% assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.position }}{% endif %}</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ page_description }}">
     {% if site.keywords %}
     <meta name="keywords" content="{{ site.keywords }}">
     {% endif %}
-    {% if site.canonical %}
-    <link rel="canonical" href="{{ site.canonical }}"/>
+    <link rel="canonical" href="{{ canonical_url }}"/>
+    {% if page.alternate_url %}
+      {% if page.lang == "zh" %}
+    <link rel="alternate" hreflang="zh-CN" href="{{ page.url | absolute_url }}"/>
+    <link rel="alternate" hreflang="en" href="{{ page.alternate_url | absolute_url }}"/>
+    <link rel="alternate" hreflang="x-default" href="{{ page.alternate_url | absolute_url }}"/>
+      {% else %}
+    <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}"/>
+    <link rel="alternate" hreflang="zh-CN" href="{{ page.alternate_url | absolute_url }}"/>
+    <link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}"/>
+      {% endif %}
     {% endif %}
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.position }}{% endif %}">
+    <meta property="og:description" content="{{ page_description }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:image" content="{{ site.avatar | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "image": {{ site.avatar | absolute_url | jsonify }},
+      "jobTitle": {{ site.position | jsonify }},
+      "worksFor": {
+        "@type": "Organization",
+        "name": {{ site.affiliation | jsonify }}
+      },
+      "sameAs": [
+        {{ site.google_scholar | jsonify }},
+        {{ site.github_link | jsonify }}
+      ]
+    }
+    </script>
 
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark | relative_url }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon | relative_url }}" type="image/png" />
@@ -29,36 +70,37 @@
       <header>
         
         {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar | relative_url }}" alt="avatar" /></a>
+        <div class="image avatar"><img src="{{ site.avatar | relative_url }}" alt="{% if page.lang == 'zh' %}{{ site.avatar_alt_zh }}{% else %}{{ site.avatar_alt }}{% endif %}" width="160" height="160" /></div>
         {% endif %}
 
         <h1>{{ site.title }}</h1>
 
         {% if site.position %}
-        <position>{{ site.position }}</position>
+        <span class="position">{% if page.lang == "zh" %}{{ site.position_zh }}{% else %}{{ site.position }}{% endif %}</span>
         {% endif %}
         {% if site.affiliation %}
-        <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+        <span class="affiliation">{{ site.affiliation }}</span>
         {% endif %}
         {% if site.email %}
-        <email>{{ site.email }}</email>
+        <span class="email">{{ site.email }}</span>
         {% endif %}
 
-        <nav class="nav-menu">
+        <nav class="nav-menu" aria-label="{% if page.lang == 'zh' %}主要导航{% else %}Primary navigation{% endif %}">
           <ul>
             {% if page.lang == "zh" %}
-            <li><a href="{{ site.baseurl }}/zh/">首页</a></li>
-            <li><a href="{{ site.baseurl }}/zh/projects/">项目</a></li>
-            <li><a href="{{ site.baseurl }}/zh/hobbies/">爱好</a></li>
+            <li><a href="{{ site.baseurl }}/zh/"{% if page.url == '/zh/' %} aria-current="page"{% endif %}>首页</a></li>
+            <li><a href="{{ site.baseurl }}/zh/projects/"{% if page.url == '/zh/projects/' %} aria-current="page"{% endif %}>项目</a></li>
+            <li><a href="{{ site.baseurl }}/zh/publications/"{% if page.url == '/zh/publications/' %} aria-current="page"{% endif %}>论文</a></li>
             {% else %}
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a href="{{ site.baseurl }}/projects/">Projects</a></li>
-            <li><a href="{{ site.baseurl }}/hobbies/">Hobbies</a></li>
+            <li><a href="{{ site.baseurl }}/"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
+            <li><a href="{{ site.baseurl }}/projects/"{% if page.url == '/projects/' %} aria-current="page"{% endif %}>Projects</a></li>
+            <li><a href="{{ site.baseurl }}/publications/"{% if page.url == '/publications/' %} aria-current="page"{% endif %}>Publications</a></li>
             {% endif %}
           </ul>
         </nav>
 
         <!-- Language Toggle -->
+        <div class="utility-links">
         <div class="lang-toggle">
           {% if page.lang == "zh" %}
             {% if page.permalink == "/zh/projects/" %}
@@ -80,22 +122,19 @@
             {% endif %}
           {% endif %}
         </div>
+        <span class="utility-separator" aria-hidden="true">·</span>
+        <a class="hobbies-link" href="{% if page.lang == 'zh' %}{{ site.baseurl }}/zh/hobbies/{% else %}{{ site.baseurl }}/hobbies/{% endif %}">{% if page.lang == 'zh' %}爱好{% else %}Hobbies{% endif %}</a>
+        </div>
 
         <div class="social-icons">
         {% if site.google_scholar %}
-        <a href="{{ site.google_scholar }}" title="Google Scholar">
+        <a href="{{ site.google_scholar }}" title="Google Scholar" aria-label="Google Scholar" target="_blank" rel="noopener">
           <i class="ai ai-google-scholar"></i>
         </a>  
         {% endif %}
 
-        {% if site.cv_link %}
-        <a href="{{ site.cv_link }}" title="CV">
-          <i class="ai ai-cv"></i>
-        </a>
-        {% endif %}
-
         {% if site.github_link %}
-        <a href="{{ site.github_link }}" title="GitHub">
+        <a href="{{ site.github_link }}" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener">
           <i class="fab fa-github"></i>
         </a>
         {% endif %}
@@ -114,7 +153,7 @@
         </div>
 
       </header>
-      <section>
+      <main id="main-content">
 
       {{ content }}
 
@@ -122,7 +161,7 @@
       <p style="margin-top: 50px;"><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
       {% endif %}
 
-      </section>
+      </main>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
