@@ -20,8 +20,8 @@ main:
 
   - title: "REAgent: Requirement-Driven LLM Agents for Software Issue Resolution"
     authors: Shiqi Kuang, Zhao Tian, Kaiwei Lin, Chaofan Tao, <strong>Shaowei Wang</strong>, Haoli Bai, Lifeng Shang, Junjie Chen
-    conference_short: arXiv
-    conference: arXiv preprint, 2026.
+    conference_short: ICSE
+    conference: International Conference on Software Engineering <strong>(ICSE)</strong>, accepted.
     pdf: https://arxiv.org/abs/2604.06861
     image: assets/img/REAgent.png
 

@@ -1,0 +1,46 @@
+# Most recent first. Maintain both languages here; both homepages use this list.
+# REAgent acceptance and announcement month were confirmed by the author in October 2026.
+- date_en: "Oct 2026"
+  date_zh: "2026年10月"
+  content_en: '<a href="https://arxiv.org/abs/2604.06861"><strong>REAgent</strong></a> has been accepted to <strong>ICSE</strong>!'
+  content_zh: '<a href="https://arxiv.org/abs/2604.06861"><strong>REAgent</strong></a> 被 <strong>ICSE</strong> 接收！'
+
+- date_en: "Oct 2026"
+  date_zh: "2026年10月"
+  content_en: '<a href="https://www.legox.net/blog/lego-rl-sao/"><strong>Single-rollout asynchronous optimization (SAO)</strong></a> in Lego-RL: training coding agents with one rollout per task, with code and training dashboards available.'
+  content_zh: '发布 Lego-RL 的<a href="https://www.legox.net/blog/lego-rl-sao/"><strong>单 rollout 异步优化（SAO）</strong></a>实践：每个任务采样一条轨迹进行训练，并公开代码与训练看板。'
+
+- date_en: "Oct 2026"
+  date_zh: "2026年10月"
+  content_en: 'Our <a href="https://www.legox.net/blog/lego-rl-cross-harness/"><strong>mixed-harness RL study</strong></a> explores one shared checkpoint across OpenHands SDK, Claude Code, and OpenCode.'
+  content_zh: '发布<a href="https://www.legox.net/blog/lego-rl-cross-harness/"><strong>混合 harness 强化学习研究</strong></a>，探索用同一个模型适配 OpenHands SDK、Claude Code 与 OpenCode。'
+
+- date_en: "Sep 2026"
+  date_zh: "2026年9月"
+  content_en: '<a href="https://www.legox.net/blog/legoflow/"><strong>LegoFlow</strong></a> released for agent-native code-data engineering, alongside <strong>5,000 tasks</strong> and <strong>2,780 successful trajectories</strong> in LegoFlow-SWE.'
+  content_zh: '发布智能体原生代码数据工程框架 <a href="https://www.legox.net/blog/legoflow/"><strong>LegoFlow</strong></a>，同步开放 LegoFlow-SWE 的 <strong>5,000 个任务</strong>与 <strong>2,780 条成功轨迹</strong>。'
+
+- date_en: "Aug 2026"
+  date_zh: "2026年8月"
+  content_en: 'Technical report <a href="https://lego-rl.pages.dev"><strong>LEGO-RL</strong></a> and its open-source framework released.'
+  content_zh: '技术报告 <a href="https://lego-rl.pages.dev"><strong>LEGO-RL</strong></a> 及其开源框架发布。'
+
+- date_en: "Aug 2026"
+  date_zh: "2026年8月"
+  content_en: '<a href="https://www.legox.net/blog/swe-lego/"><strong>SWE-Lego</strong></a> models and datasets surpassed <strong>200K cumulative downloads</strong>.'
+  content_zh: '<a href="https://www.legox.net/blog/swe-lego/"><strong>SWE-Lego</strong></a> 模型与数据集累计下载量突破 <strong>20 万</strong>。'
+
+- date_en: "Jul 2026"
+  date_zh: "2026年7月"
+  content_en: 'Technical report <a href="https://www.legox.net/blog/swe-review/"><strong>SWE-Review</strong></a> released.'
+  content_zh: '技术报告 <a href="https://www.legox.net/blog/swe-review/"><strong>SWE-Review</strong></a> 发布。'
+
+- date_en: "Apr 2026"
+  date_zh: "2026年4月"
+  content_en: 'Technical report <a href="https://arxiv.org/abs/2604.06861"><strong>REAgent</strong></a> released.'
+  content_zh: '技术报告 <a href="https://arxiv.org/abs/2604.06861"><strong>REAgent</strong></a> 发布。'
+
+- date_en: "Jan 2026"
+  date_zh: "2026年1月"
+  content_en: 'Technical report <a href="https://www.legox.net/blog/swe-lego/"><strong>SWE-Lego</strong></a> released.'
+  content_zh: '技术报告 <a href="https://www.legox.net/blog/swe-lego/"><strong>SWE-Lego</strong></a> 发布。'

@@ -32,28 +32,7 @@ alternate_url: /
 
 ## 最新动态
 
-<table class="news-table">
-  <tr>
-    <td class="date">2026年8月</td>
-    <td>技术报告 <strong>"LEGO-RL"</strong> 及其开源框架发布。</td>
-  </tr>
-  <tr>
-    <td class="date">2026年8月</td>
-    <td><strong>SWE-Lego</strong> 模型与数据集累计下载量突破 20 万。</td>
-  </tr>
-  <tr>
-    <td class="date">2026年7月</td>
-    <td>技术报告 <strong>"SWE-Review"</strong> 发布。</td>
-  </tr>
-  <tr>
-    <td class="date">2026年4月</td>
-    <td>技术报告 <strong>"REAgent"</strong> 发布。</td>
-  </tr>
-  <tr>
-    <td class="date">2026年1月</td>
-    <td>技术报告 <strong>"SWE-Lego"</strong> 发布。</td>
-  </tr>
-</table>
+{% include news.html %}
 
 {% include_relative _includes/publications.md limit=5 heading="代表论文" more_url="/zh/publications/" more_label="查看全部论文 →" %}
 

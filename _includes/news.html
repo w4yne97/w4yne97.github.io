@@ -1,0 +1,13 @@
+<table class="news-table">
+  {% for item in site.data.news %}
+  <tr>
+    {% if page.lang == 'zh' %}
+    <td class="date">{{ item.date_zh }}</td>
+    <td>{{ item.content_zh }}</td>
+    {% else %}
+    <td class="date">{{ item.date_en }}</td>
+    <td>{{ item.content_en }}</td>
+    {% endif %}
+  </tr>
+  {% endfor %}
+</table>

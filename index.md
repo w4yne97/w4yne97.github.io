@@ -31,28 +31,7 @@ Previously, I received my Ph.D. from **Xi'an Jiaotong University** and was a vis
 
 ## Latest
 
-<table class="news-table">
-  <tr>
-    <td class="date">Aug 2026</td>
-    <td>Technical report <strong>"LEGO-RL"</strong> and its open-source framework released.</td>
-  </tr>
-  <tr>
-    <td class="date">Aug 2026</td>
-    <td><strong>SWE-Lego</strong> models and datasets surpassed 200K cumulative downloads.</td>
-  </tr>
-  <tr>
-    <td class="date">Jul 2026</td>
-    <td>Technical report <strong>"SWE-Review"</strong> released.</td>
-  </tr>
-  <tr>
-    <td class="date">Apr 2026</td>
-    <td>Technical report <strong>"REAgent"</strong> released.</td>
-  </tr>
-  <tr>
-    <td class="date">Jan 2026</td>
-    <td>Technical report <strong>"SWE-Lego"</strong> released.</td>
-  </tr>
-</table>
+{% include news.html %}
 
 {% include publications.md limit=5 heading="Selected Publications" more_url="/publications/" more_label="View all publications →" %}
 

@@ -5,6 +5,13 @@
   link_type: "website"
   tags: ["Coding Agents", "Post-training", "Open Source"]
 
+- title: "LegoFlow"
+  description: "An agent-native code-data engineering framework connecting task curation, trajectory collection, model training, and evaluation."
+  description_zh: "智能体原生的代码数据工程框架，贯通任务构建、轨迹采集、模型训练与评测。"
+  link: "https://www.legox.net/blog/legoflow/"
+  link_type: "website"
+  tags: ["Data Engineering", "Coding Agents", "Open Source"]
+
 - title: "SWE-Review"
   description: "An agentic code review framework that turns one-shot issue resolution into a closed-loop generate-review-revise process."
   description_zh: "面向 Coding Agent 的智能体代码审查框架，将一次性问题修复扩展为生成、审查与修订闭环。"
